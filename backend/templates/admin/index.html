@@ -1,0 +1,41 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+  <section class="admin-hero">
+    <div>
+      <p class="admin-kicker">SuperTour Dashboard</p>
+      <h1>Kontent, so'rovlar va tour inventarini bitta joydan boshqaring.</h1>
+      <p>Tourlar, destinationlar, FAQ, testimonial va kontakt so'rovlarini tez yangilash uchun tezkor kirish kartalari.</p>
+    </div>
+  </section>
+
+  <section class="admin-quick-grid">
+    <a class="admin-quick-card" href="/admin/tours/tour/">
+      <strong>Tours</strong>
+      <span>Yangi paketlar, narx, featured holati</span>
+    </a>
+    <a class="admin-quick-card" href="/admin/tours/destination/">
+      <strong>Destinations</strong>
+      <span>Yo'nalishlar, season, visa note</span>
+    </a>
+    <a class="admin-quick-card" href="/admin/tours/inquiry/">
+      <strong>Inquiries</strong>
+      <span>Mijoz so'rovlari va status boshqaruvi</span>
+    </a>
+    <a class="admin-quick-card" href="/admin/tours/faq/">
+      <strong>FAQ</strong>
+      <span>Savol-javoblarni saytda ko'rsatish</span>
+    </a>
+    <a class="admin-quick-card" href="/admin/tours/testimonial/">
+      <strong>Testimonials</strong>
+      <span>Ijtimoiy ishonch bloklari</span>
+    </a>
+    <a class="admin-quick-card" href="/admin/tours/sitesetting/">
+      <strong>Site settings</strong>
+      <span>Hero matn, kontakt va social linklar</span>
+    </a>
+  </section>
+
+  {{ block.super }}
+{% endblock %}

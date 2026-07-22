@@ -1,0 +1,43 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Backend static/media artifacts
+backend/staticfiles/
+backend/media/
+
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+.pnpm-store/
+frontend/.next/
+.next/
+out/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# OS temp
+tmp/
+temp/
